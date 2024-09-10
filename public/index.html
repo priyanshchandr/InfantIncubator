@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-color: #FFDDC1; /* Background color */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .box {
+            width: 200px;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px; /* Rounded corners for ambient effect */
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for ambient effect */
+        }
+        #temperature {
+            background-color: #FFAB91;
+            color: #FF5733;
+        }
+        #weight {
+            background-color: #A0D2DB;
+            color: #007072;
+        }
+        #humidity {
+            background-color: #B8A8D9;
+            color: #6433FF;
+        }
+        #footer {
+            margin-top: 20px;
+            color: #555;
+        }
+        h1 {
+            font-size: 36px;
+            color: #FF5733;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Baby Incubator</h1>
+    <div class="container">
+        <div class="box" id="temperature">
+            <h2>Temperature</h2>
+            <p id="temperatureValue">Fetching...</p>
+        </div>
+        <div class="box" id="weight">
+            <h2>Weight</h2>
+            <p id="weightValue">Fetching...</p>
+        </div>
+        <div class="box" id="humidity">
+            <h2>Humidity</h2>
+            <p id="humidityValue">Fetching...</p>
+        </div>
+    </div>
+    <p id="footer">Made with love ❤️ By Nurture Tech</p>
+
+    <!-- Include the JavaScript file -->
+    <script src="sensorData.js"></script>
+</body>
+</html>
